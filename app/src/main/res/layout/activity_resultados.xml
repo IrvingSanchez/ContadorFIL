@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.irvingsanchez.contadorfil.ResultadosActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Conteo FIL" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:id="@+id/menu_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            fab:fab_addButtonColorNormal="@android:color/holo_blue_dark"
+            fab:fab_addButtonSize="normal"
+            fab:fab_labelStyle="@style/Etiquetas"
+            fab:fab_labelsPosition="left"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/accion_ninios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/verde"
+                fab:fab_icon="@drawable/ic_chico"
+                fab:fab_size="mini"
+                fab:fab_title="Niños" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/accion_jovenes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/verde"
+                fab:fab_icon="@drawable/ic_joven"
+                fab:fab_size="mini"
+                fab:fab_title="Jóvenes" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/accion_adultos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/verde"
+                fab:fab_icon="@drawable/ic_padre"
+                fab:fab_size="mini"
+                fab:fab_title="Adultos" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/accion_discapacidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_colorNormal="@color/verde"
+                fab:fab_icon="@drawable/ic_silla_de_ruedas"
+                fab:fab_size="mini"
+                fab:fab_title="Discapacidad" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/configuracion"
+        android:title="Configuración" />
+    <item
+        android:id="@+id/totales"
+        android:title="Totales" />
+    <item
+        android:id="@+id/actualizar"
+        android:icon="@drawable/ic_refresh"
+        android:title="Actualizar"
+        app:showAsAction="ifRoom" />
+</menu>
